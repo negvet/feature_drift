@@ -37,7 +37,7 @@ To visualize the most salient features,
 I applied [D-RISE](https://arxiv.org/pdf/2006.03204.pdf) to the input image and to the feature map (activation tensor). 
 See implementation results in [REF].
 Similar results might be obtained from the different approach - 
-when visualizing per-class slices of the raw classification head output (if available).
+when visualizing normalized per-class slices of the raw classification head output (if available).
 
 ## Why this is happening?
 Due to the loss design.
