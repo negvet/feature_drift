@@ -19,10 +19,16 @@
 </div>
 
 # ATSS
-
+<div align="center">
+    <img src="https://github.com/negvet/feature_drift/assets/17028475/94360d07-f191-4ffe-9721-e772de2c96ab">
+</div>
 
 # RetinaNet
-
+<div align="center">
+    <img src="https://github.com/negvet/feature_drift/assets/17028475/2f93c570-493d-4d94-bff7-c3d5750dd00d">
+</div>
 
 # Faster R-CNN
-
+<div align="center">
+    <img src="https://github.com/negvet/feature_drift/assets/17028475/97829a0f-252f-4e5d-9e4b-d19885f427be">
+</div>
