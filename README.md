@@ -4,15 +4,15 @@ Some CNN-based single-stage object detectors significantly change spatial locati
 while moving from the input image space towards the feature map space. 
 In particular, in the intermediate feature maps, activations might be specially shifted (in most cases towards the center of the object).
 Below image highlights salient features in the input image space (middle column) and in the feature map space (right column).
-Salient features are the ones that the models use to detect an object of a 'person' class.
+Salient features are the ones that models use to detect an object of a 'person' class (see yellow bbox).
 
 <div align="center">
     <img src="https://github.com/negvet/feature_drift/assets/17028475/a2bab030-e185-42ac-b25a-39d6e8f88703">
 </div>
 
-See more examples [REF].
+See more saliency maps and models in [examples](examples).
 
-This is not the case for CNN-based classification architectures.
+Such kind of behaviour is not the case for CNN-based classification architectures.
 That is the reason of well-developed CAM-based Explainable AI (XAI) methods for classifiers.
 On the other side, many object detectors, while being designed to precisely estimate location of the objects, 
 actually mess up spatial location of object features in the latent space.
