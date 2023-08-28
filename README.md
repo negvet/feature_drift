@@ -2,9 +2,13 @@
 
 Some CNN-based single-stage object detectors significantly change spatial locations of (salient) features, 
 while moving from the input image space towards the feature map space. 
-In particular, in the intermediate feature maps, activations move towards the center of the object.
+In particular, in the intermediate feature maps, activations might move towards the center of the object.
+See below image for a reference.
 
-[IMGs].
+<div align="center">
+    <img src="https://github.com/negvet/feature_drift/assets/17028475/a2bab030-e185-42ac-b25a-39d6e8f88703">
+</div>
+
 See more examples [REF].
 
 This is not the case for CNN-based classification architectures.
@@ -42,6 +46,5 @@ This is not the case for e.g. two-stage detectors or RetinaNet, see [REF].
 ## Which limitations does it bring?
 It can limit anything that leverages internal network activations to recover spatial insights, e.g.:
 - Obtaining class activation map in YOLO paper (see Fig. 2 at [YOLO](https://arxiv.org/pdf/1506.02640.pdf) paper).
-- Activation-based XAI methods, which are somehow using feature maps, 
-cannot always be directly used to explain object detectors. 
+- Activation-based XAI methods, which are somehow using feature maps, cannot always be directly used to explain object detectors. 
 Due to fact that feature map space might not well preserve spatial information.
