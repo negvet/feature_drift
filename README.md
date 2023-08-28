@@ -2,8 +2,9 @@
 
 Some CNN-based single-stage object detectors significantly change spatial locations of (salient) features, 
 while moving from the input image space towards the feature map space. 
-In particular, in the intermediate feature maps, activations might move towards the center of the object.
-See below image for a reference.
+In particular, in the intermediate feature maps, activations might be specially shifted (in most cases towards the center of the object).
+Below image highlights salient features in the input image space (middle column) and in the feature map space (right column).
+Salient features are the ones that the models use to detect an object of a 'person' class.
 
 <div align="center">
     <img src="https://github.com/negvet/feature_drift/assets/17028475/a2bab030-e185-42ac-b25a-39d6e8f88703">
@@ -18,8 +19,8 @@ actually mess up spatial location of object features in the latent space.
 
 ## Which object detectors shift features?
 Shift features:
-- [YOLOv3](https://arxiv.org/pdf/1804.02767.pdf)
 - [YOLOX](https://arxiv.org/pdf/2107.08430.pdf)
+- [YOLOv3](https://arxiv.org/pdf/1804.02767.pdf)
 - [SSD](https://arxiv.org/pdf/1512.02325.pdf)
 - [RTMDet](https://arxiv.org/pdf/2212.07784.pdf)
 
