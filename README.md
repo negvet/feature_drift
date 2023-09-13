@@ -44,7 +44,7 @@ Due to the loss design.
 Only cells located in the proximity to the center of the object are getting gradient signal - 
 IOU(target, prediction) is estimated, see iou_loss implementation in [mmdetection](https://github.com/open-mmlab/mmdetection/blob/f78af7785ada87f1ced75a2313746e4ba3149760/mmdet/models/losses/iou_loss.py#L47).
 Therefore, the model explicitly learn to move features to the center of the object.
-This is lees of an issue for e.g. two-stage detectors (Faster R-CNN) or RetinaNet, see [examples](saliency_maps).
+This is less of an issue for e.g. two-stage detectors (Faster R-CNN) or RetinaNet, see [examples](saliency_maps).
 
 ## Which limitations does it bring?
 It can limit anything that leverages internal network activations to recover spatial insights, e.g.:
