@@ -2,7 +2,8 @@
 
 Some CNN-based single-stage object detectors significantly change spatial locations of (salient) features, 
 while moving from the input image space towards the feature map space. 
-In particular, in the intermediate feature maps, activations might be specially shifted (in many cases towards the center of the object).
+In particular, in the intermediate feature maps, activations might be spatially shifted 
+(in many cases towards the center of the object).
 
 Image below highlights salient features in the input image space (middle column) and in the feature map space (right column).
 Salient features are the ones that models use to detect a bbox of a 'person' class.
