@@ -7,7 +7,7 @@ import os
 import mmcv
 from mmdet.apis import init_detector, inference_detector
 
-from src.d_rise import generate_saliency_map_drise, generate_saliency_map_drise_feature_map_space
+from d_rise import generate_saliency_map_drise, generate_saliency_map_drise_feature_map_space
 
 
 MODELS = {

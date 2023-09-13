@@ -35,7 +35,7 @@ While the following models mostly tend to preserve spacial location of the activ
 XAI can be used to estimate which part of input (which features) makes the most contribution to the model prediction.
 To visualize the most salient features, 
 I applied [D-RISE](https://arxiv.org/pdf/2006.03204.pdf) to the input image and to the feature map (activation tensor). 
-See implementation results in [REF].
+See implementation results [here](src/README.md).
 Similar results might be obtained from the different approach - 
 when visualizing normalized per-class slices of the raw classification head output (if available).
 
