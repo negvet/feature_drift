@@ -9,7 +9,7 @@ Image below highlights salient features in the input image space (middle column)
 Salient features are the ones that models use to detect a bbox of a 'person' class.
 
 <div align="center">
-    <img src="https://github.com/negvet/feature_drift/assets/17028475/a2bab030-e185-42ac-b25a-39d6e8f88703">
+    <img src="https://github.com/negvet/feature_drift/assets/17028475/8f564a58-7754-439c-95f9-6c544fd4a96c">
 </div>
 
 See more models and saliency maps in [examples](saliency_maps).
