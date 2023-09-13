@@ -12,6 +12,8 @@ See [d_rise](d_rise.py) for more details.
 
 Performance of the implementation is far from being optimal, but enough to perform initial investigation.
 
+Please note that D-RISE might fail in some cases to generate high quality saliency map, due to bad luck of random mask generation.
+
 # Installation
 For installation follow instructions in mmdetection [get_started](https://mmdetection.readthedocs.io/en/latest/get_started.html).
 To reproduce the results, use versions specified in requirements.txt (optional).
