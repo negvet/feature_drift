@@ -11,7 +11,7 @@ Salient features are the ones that models use to detect a bbox of a 'person' cla
     <img src="https://github.com/negvet/feature_drift/assets/17028475/a2bab030-e185-42ac-b25a-39d6e8f88703">
 </div>
 
-See more models and saliency maps in [examples](examples).
+See more models and saliency maps in [examples](saliency_maps).
 
 Such kind of behaviour is not the case for CNN-based classification architectures (Resnet, MobileNet, etc.).
 That is the reason of well-developed CAM-based Explainable AI (XAI) methods for classifiers.
@@ -19,7 +19,7 @@ On the other side, many object detectors, while being designed to precisely esti
 actually mess up spatial location of object features in the latent space.
 
 ## Which object detectors shift features?
-Considering [examples](examples), it is possible to conclude that the following models (mostly) shift activations
+Considering [examples](saliency_maps), it is possible to conclude that the following models (mostly) shift activations
 towards the center of the object:
 - [YOLOX](https://arxiv.org/pdf/2107.08430.pdf)
 - [YOLOv3](https://arxiv.org/pdf/1804.02767.pdf)
@@ -44,7 +44,7 @@ Due to the loss design.
 Only cells located in the proximity to the center of the object are getting gradient signal - 
 IOU(target, prediction) is estimated, see iou_loss implementation in [mmdetection](https://github.com/open-mmlab/mmdetection/blob/f78af7785ada87f1ced75a2313746e4ba3149760/mmdet/models/losses/iou_loss.py#L47).
 Therefore, the model explicitly learn to move features to the center of the object.
-This is lees of an issue for e.g. two-stage detectors (Faster R-CNN) or RetinaNet, see [examples](examples).
+This is lees of an issue for e.g. two-stage detectors (Faster R-CNN) or RetinaNet, see [examples](saliency_maps).
 
 ## Which limitations does it bring?
 It can limit anything that leverages internal network activations to recover spatial insights, e.g.:
